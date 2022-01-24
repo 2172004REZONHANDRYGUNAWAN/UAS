@@ -1,0 +1,17 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+const a ='https://api.coindesk.com/v1/bpi/currentprice.json';
+async function Bebasfunction(){
+    const b = await fetch(a);
+    const c = await b.json();
+    console.log(c);
+    document.getElementById("bitcoin").textContent=c.bpi.USD.rate;
+}
+Bebasfunction();
+        </script>
+        <p id="bitcoin"></p>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<html>
+    <head>
+      <meta name="author" content="Rezon handry Gunawan 2172004">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body>
+      <script>
+        const a ='https://api.coindesk.com/v1/bpi/currentprice.json';
+        async function Bebasfunction(){
+            const b = await fetch(a);
+            const c = await b.json();
+            console.log(c);
+            document.getElementById("bitcoin").textContent=c.bpi.EUR.rate;
+        }
+        Bebasfunction();
+                </script>
+                <div class="T1">
+                    <p id="bitcoin"></p>
+                </div>
+                <div class="T2">
+                  <p class="p2">1 Bitcoin</p>
+                </div>
+                
+                <div class="hitung0">
+                  <div class="input3">BTC</div>
+                  <input id="BTC" type="number" class="input"/>
+                  <hr />
+                  <div></div>
+                  <div class="input4">EUR</div>
+                  <input id="EUR" type="number" class="input1" />
+                  <script src="euro.js"></script>
+                </div>
+               
+        <link rel="stylesheet" href="EURO.CSS">
+        <input type="checkbox" id="active">
+        <label for="active" class="menu-btn"><span></span></label>
+        <label for="active" class="close"></label>
+        <div class="wrapper">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="USD.html">USD</a></li>
+            <li><a href="EURO.html">EURO</a></li>
+            <li><a href="POUNTSTERLINK.html">POUNSTERLINK</a></li>
+    </ul>
+    </div>
+    <div class="content">
+          <div class="title"></div>
+    <p></p>
+    </div>
+    </body>
+</html>
